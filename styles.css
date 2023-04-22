@@ -156,3 +156,52 @@ button {
     grid-template-columns: 5fr 2fr;
     grid-template-rows: repeat(2, 1fr);
 }
+.card {
+    height: 200px;
+    width: 300px;
+}
+.projects {
+    grid-row: span 2;
+    display: grid;
+    grid-template: 50px repeat(auto-fill, 200px) / repeat(auto-fill, 300px);
+    gap: 35px;
+    padding: 35px;
+}
+#projectsTitle {
+    grid-column: 1 / -1;
+    align-self: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+.project {
+    display: grid;
+    grid-template: 30px 3fr 2fr / 10px 1fr;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+}
+.title {
+    font-size: medium;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 1rem;
+}
+.description {
+    padding: 1rem;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-style: oblique;
+}
+.line {
+    grid-area: 1 / 1 / span 3 / span 1;
+    background-color: #f59e0b;
+}
+.projectIcons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+}
