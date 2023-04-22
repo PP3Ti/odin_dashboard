@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+* {
+    margin: 0;
+    padding: 0;
+}
+/* END OF RESETING CSS */
+
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 180px 1fr / minmax(220px, 1fr) 5fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / span 2 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.sidebarIcons, .sidebarMenu {
+    display: grid;
+    grid-template: 6rem repeat(10, 3rem) 1fr / 1fr;
+    place-items: center;
+    gap: 10px;
+}
+.sidebarMenu {
+    padding-left: 10px;
+    justify-items: start;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+    grid-template: 2fr 3fr / 1fr;
+}
+
+.headerTop {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.searchbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5rem;
+}
+.searchField {
+    display: flex;
+    font-size: 1.1rem;
+    flex-grow: 1;
+    background-color: #d4dee9;
+    border: none;
+    border-radius: 8px;
+    margin-left: 2rem;
+    margin-right: 8rem;
+}
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.headerBottom {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+.greeting {
+    padding: 1.1rem;
+    padding-left: 5rem;
+    display: flex;
+    font-weight: bold;
+    gap: 2rem;
+}
+.greeting span{
+    font-size: x-large;
+}
+.greeting p {
+    padding-left: 1.2rem;
+    align-self: center;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+button {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    background-color: #0ea5e9;
+}
+
+
+.main {
+    background-color: #d4dee9;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
